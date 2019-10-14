@@ -1,0 +1,3 @@
+.rabbit-state
+node_modules/
+*.log
