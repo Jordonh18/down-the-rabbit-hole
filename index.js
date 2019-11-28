@@ -11,7 +11,7 @@ function inspect(values = observed) {
   return {
     readings,
     account,
-    boundary: 21,
+    boundary: 64,
     limit
   };
 }

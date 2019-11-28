@@ -1,6 +1,6 @@
 "use strict";
 
-const observed = Object.freeze([13, 13]);
+const observed = Object.freeze([13, 13, 14]);
 const limit = 21;
 
 function measure(value) {
