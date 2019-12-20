@@ -4,6 +4,7 @@ const observed = Object.freeze([13, 13, 14]);
 const limit = 21;
 
 function measure(value) {
+  if (typeof value === "string" && value.trim() === "") throw new TypeError("reading is empty");
   const number = Number(value);
   if (!Number.isFinite(number)) throw new TypeError("reading must be finite");
   return Math.trunc(number);
