@@ -12,6 +12,7 @@ function inspect(values = observed) {
     readings,
     account,
     boundary: 64,
+    reached: descend(0, 64),
     limit
   };
 }
