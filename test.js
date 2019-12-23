@@ -8,6 +8,7 @@ const { normalise, openBox } = require("./rabbit.js");
 const result = inspect();
 assert.deepEqual(result.readings, [13, 13, 14]);
 assert.equal(result.account.stable, false);
+assert.equal(result.account.count, 3);
 assert.equal(descend(0, result.boundary), 64);
 assert.equal(descend(-1, result.boundary), 64);
 assert.equal(normalise(" Before Main "), "beforemain");
