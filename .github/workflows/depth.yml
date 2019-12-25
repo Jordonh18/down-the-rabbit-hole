@@ -1,0 +1,14 @@
+name: depth
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: count
+        run: |
+          git rev-list --count HEAD
+          git blame -L 14,14 index.js
